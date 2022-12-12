@@ -5,7 +5,11 @@
 [![Tests](https://github.com/realbazso/docmystuff/workflows/Test/badge.svg)](https://github.com/realbazso/docmystuff/actions?query=workflow%3ATest)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/realbazso/docmystuff/blob/master/LICENSE)
 
-Create structured explanation document in Markdown for code folders using ChatGPT
+Create structured explanation document in Markdown for code folders using ChatGPT.
+---
+**NOTE**
+Under development, not ready for use yet.
+---
 
 ## Installation
 
@@ -23,6 +27,10 @@ You can also use:
 
     python -m docmystuff --help
 
+Example usage:
+
+    docmystuff generate -k <your-key-file> -o <output-file> INPUT_FOLDER
+
 ## Development
 
 To contribute to this tool, first checkout the code. Then create a new virtual environment:
@@ -38,3 +46,7 @@ Now install the dependencies and test dependencies:
 To run the tests:
 
     pytest
+
+---
+
+Credit for boilerplate: <https://github.com/simonw/click-app>

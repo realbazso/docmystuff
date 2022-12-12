@@ -7,15 +7,25 @@ def cli():
     "Create structured explanation document in Markdown for code folders using ChatGPT"
 
 
-@cli.command(name="command")
+@cli.command(name="generate")
 @click.argument(
-    "example"
+    "INPUT_FOLDER",
+)
+@click.option(
+    "-k",
+    "--key",
+    help="ChatGPT session key filename",
 )
 @click.option(
     "-o",
-    "--option",
-    help="An example option",
+    "--output",
+    help="Filename to output documentation to",
 )
-def first_command(example, option):
-    "Command description goes here"
+@click.option(
+    "-l",
+    "--language",
+    help="Language to generate documentation in",
+)
+def first_command(ChatGPT_session_key, option):
+    "Start document generation"
     click.echo("Here is some output")
