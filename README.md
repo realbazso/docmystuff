@@ -6,9 +6,11 @@
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/realbazso/docmystuff/blob/master/LICENSE)
 
 Create structured explanation document in Markdown for code folders using ChatGPT.
+
 ---
 **NOTE**
 Under development, not ready for use yet.
+
 ---
 
 ## Installation
@@ -50,3 +52,4 @@ To run the tests:
 ---
 
 Credit for boilerplate: <https://github.com/simonw/click-app>
+

@@ -8,17 +8,17 @@ def cli():
 
 
 @cli.command(name="generate")
-@click.argument(
-    "INPUT_FOLDER",
-)
+@click.argument("input", type=click.Path(exists=True), required=True)
 @click.option(
     "-k",
     "--key",
+    type=click.File('rb'),
     help="ChatGPT session key filename",
 )
 @click.option(
     "-o",
     "--output",
+    type=click.File('wb'),
     help="Filename to output documentation to",
 )
 @click.option(
@@ -26,6 +26,6 @@ def cli():
     "--language",
     help="Language to generate documentation in",
 )
-def first_command(ChatGPT_session_key, option):
+def generate(key, output, language, input):
     "Start document generation"
-    click.echo("Here is some output")
+    click.echo(f"Here is some output: {language}")
