@@ -8,7 +8,7 @@
 Create structured explanation document in Markdown for code folders using ChatGPT.
 
 ---
-**NOTE**
+**NOTE**: 
 Under development, not ready for use yet.
 
 ---
@@ -18,6 +18,19 @@ Under development, not ready for use yet.
 Install this tool using `pip`:
 
     pip install docmystuff
+
+### Obtain API key
+
+The application is using OpenAI ChatGPT, which requires an API key. You can get one from <https://beta.openai.com/account/api-keys>. Put it into a file.
+
+### Alternative solution: Obtaining the session token
+
+Go to <https://chat.openai.com/chat> and log in or sign up.
+Open the developer tools in your browser.
+Go to the Application tab and open the Cookies section.
+Copy the value for __Secure-next-auth.session-token and save it.
+Once you have obtained a session token, you can configure the extension to use it as described in the previous section.
+Credit: <https://github.com/mpociot/chatgpt-vscode#obtaining-the-session-token>
 
 ## Usage
 
